@@ -5,11 +5,13 @@ import Hero from './components/Hero';
 
 // Placeholder components for sections to be implemented
 import TechStack from './components/TechStack';
-import Services from './components/Services';
+import Education from './components/Education';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Research from './components/Research';
+import Certifications from './components/Certifications';
 
 function App() {
   return (
@@ -18,11 +20,13 @@ function App() {
         <div id="home">
             <Hero />
         </div>
-        <TechStack />
         <About />
         <Experience />
-        <Services />
         <Projects />
+        <TechStack />
+        <Education />
+        <Research />
+        <Certifications />
         <Contact />
       </Layout>
     </Router>

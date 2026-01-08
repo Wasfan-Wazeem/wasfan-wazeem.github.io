@@ -21,12 +21,13 @@ const Hero = () => {
             Available for Freelance Work
           </div>
           
+          
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
-            Building Digital <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-blue-500">Experiences</span> That Matter
+            Building Scalable <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-blue-500">Digital Solutions</span>
           </h1>
           
           <p className="text-gray-400 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
-            I'm a Full Stack Developer specializing in building exceptional digital experiences. Currently focused on building accessible, human-centered products.
+            An Information Systems undergraduate with a strong IT background, passionate about using technology to solve real-world problems.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -42,9 +43,9 @@ const Hero = () => {
 
           <div className="mt-16 grid grid-cols-3 gap-8 border-t border-white/10 pt-8">
             {[
-              { label: 'Years Experience', value: '5+' },
-              { label: 'Projects Done', value: '50+' },
-              { label: 'Clients Happy', value: '30+' },
+              { label: 'Years Experience', value: '3+' },
+              { label: 'Major Projects', value: '4+' },
+              // { label: 'Hackathons', value: '10+' },
             ].map((stat, index) => (
               <div key={index}>
                 <h4 className="text-3xl font-bold text-white mb-1">{stat.value}</h4>
@@ -64,61 +65,86 @@ const Hero = () => {
             <div className="relative w-full aspect-square max-w-lg mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-tr from-neon-green/20 to-blue-500/20 rounded-2xl rotate-6 blur-2xl"></div>
                 
-                {/* Main Card */}
-                <div className="relative h-full bg-tech-gray border border-white/10 rounded-2xl p-6 shadow-2xl overflow-hidden backdrop-blur-sm">
-                    {/* Code Editor Look */}
-                    <div className="flex items-center gap-2 mb-4 border-b border-white/5 pb-4">
-                        <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                    </div>
+                {/* Animated Border Container */}
+                <div className="relative h-full rounded-2xl overflow-hidden p-[1px]">
+                    {/* Running Border Animation */}
+                    <div className="absolute inset-[-50%] bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] animate-[spin_4s_linear_infinite] opacity-50"></div>
                     
-                    <div className="font-mono text-sm space-y-2">
-                        <div className="flex gap-4">
-                            <span className="text-gray-600">01</span>
-                            <span className="text-purple-400">const</span> <span className="text-blue-400">Developer</span> <span className="text-white">=</span> <span className="text-yellow-300">{'{'}</span>
+                    {/* Main Card */}
+                    <div className="relative h-full bg-tech-gray rounded-2xl p-6 shadow-2xl overflow-hidden backdrop-blur-sm border border-white/10">
+                        {/* Code Editor Look */}
+                        <div className="flex items-center gap-2 mb-4 border-b border-white/5 pb-4">
+                            <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div className="w-3 h-3 rounded-full bg-green-500"></div>
                         </div>
-                        <div className="flex gap-4">
-                            <span className="text-gray-600">02</span>
-                            <span className="text-white ml-4">name:</span> <span className="text-green-400">'Alex'</span><span className="text-white">,</span>
+                        
+                        <div className="font-mono text-sm space-y-3">
+                            <div className="flex gap-4">
+                                <span className="text-gray-600 select-none">01</span>
+                                <div>
+                                    <span className="text-purple-400">const</span> <span className="text-blue-400">Developer</span> <span className="text-white">=</span> <span className="text-yellow-300">{'{'}</span>
+                                </div>
+                            </div>
+                            <div className="flex gap-4">
+                                <span className="text-gray-600 select-none">02</span>
+                                <div className="pl-4">
+                                    <span className="text-white">name:</span> <span className="text-green-400">'Wasfan Wazeem'</span><span className="text-white">,</span>
+                                </div>
+                            </div>
+                            <div className="flex gap-4">
+                                <span className="text-gray-600 select-none">03</span>
+                                <div className="pl-4">
+                                    <span className="text-white">role:</span> <span className="text-green-400">'Full Stack Dev'</span><span className="text-white">,</span>
+                                </div>
+                            </div>
+                            <div className="flex gap-4">
+                                <span className="text-gray-600 select-none">04</span>
+                                <div className="pl-4">
+                                    <span className="text-white">skills:</span> <span className="text-yellow-300">['React', 'Go', 'K8s']</span><span className="text-white">,</span>
+                                </div>
+                            </div>
+                            <div className="flex gap-4">
+                                <span className="text-gray-600 select-none">05</span>
+                                <div className="pl-4">
+                                    <span className="text-white">hardWorker:</span> <span className="text-orange-400">true</span><span className="text-white">,</span>
+                                </div>
+                            </div>
+                            <div className="flex gap-4">
+                                <span className="text-gray-600 select-none">06</span>
+                                <div className="pl-4">
+                                    <span className="text-white">problemSolver:</span> <span className="text-orange-400">true</span><span className="text-white">,</span>
+                                </div>
+                            </div>
+                             <div className="flex gap-4">
+                                <span className="text-gray-600 select-none">07</span>
+                                <div className="pl-4">
+                                    <span className="text-white">hireable:</span> <span className="text-purple-400">function</span><span className="text-white">() {'{'}</span>
+                                </div>
+                            </div>
+                             <div className="flex gap-4">
+                                <span className="text-gray-600 select-none">08</span>
+                                <div className="pl-8">
+                                    <span className="text-purple-400">return</span> <span className="text-green-400">true</span><span className="text-white">;</span>
+                                </div>
+                            </div>
+                             <div className="flex gap-4">
+                                <span className="text-gray-600 select-none">09</span>
+                                <div className="pl-4">
+                                    <span className="text-white">{'}'}</span>
+                                </div>
+                            </div>
+                            <div className="flex gap-4">
+                                <span className="text-gray-600 select-none">10</span>
+                                <span className="text-yellow-300">{'}'}</span>
+                            </div>
                         </div>
-                        <div className="flex gap-4">
-                            <span className="text-gray-600">03</span>
-                            <span className="text-white ml-4">skills:</span> <span className="text-yellow-300">['React', 'Node', 'Next']</span><span className="text-white">,</span>
-                        </div>
-                         <div className="flex gap-4">
-                            <span className="text-gray-600">04</span>
-                            <span className="text-white ml-4">hardWorker:</span> <span className="text-purple-400">true</span><span className="text-white">,</span>
-                        </div>
-                        <div className="flex gap-4">
-                            <span className="text-gray-600">05</span>
-                            <span className="text-white ml-4">problemSolver:</span> <span className="text-purple-400">true</span><span className="text-white">,</span>
-                        </div>
-                        <div className="flex gap-4">
-                            <span className="text-gray-600">06</span>
-                            <span className="text-white ml-4">hireable:</span> <span className="text-purple-400">function</span><span className="text-yellow-300">()</span> <span className="text-yellow-300">{'{'}</span>
-                        </div>
-                         <div className="flex gap-4">
-                            <span className="text-gray-600">07</span>
-                            <span className="text-purple-400 ml-8">return</span> <span className="text-green-400">true</span><span className="text-white">;</span>
-                        </div>
-                        <div className="flex gap-4">
-                            <span className="text-gray-600">08</span>
-                            <span className="text-white ml-4">{'}'}</span>
-                        </div>
-                        <div className="flex gap-4">
-                            <span className="text-gray-600">09</span>
-                            <span className="text-yellow-300">{'}'}</span>
-                        </div>
-                    </div>
 
-                    {/* Draggable/Interactive Elements Decoration */}
-                    <div className="absolute bottom-6 right-6 p-4 bg-tech-black border border-white/10 rounded-lg shadow-lg">
-                        <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 rounded bg-neon-green/20 flex items-center justify-center text-neon-green font-bold">R</div>
-                            <div>
-                                <div className="text-xs text-gray-400">Component</div>
-                                <div className="text-sm font-bold">Hero.tsx</div>
+                         <div className="absolute bottom-6 right-6 flex items-center gap-2 px-3 py-1.5 bg-tech-black rounded-md border border-white/10 shadow-lg">
+                            <div className="w-6 h-6 rounded bg-green-600 flex items-center justify-center font-bold text-xs text-white">R</div>
+                            <div className="text-xs">
+                                <div className="text-gray-400 text-[10px]">Component</div>
+                                <div className="font-bold text-white">Hero.jsx</div>
                             </div>
                         </div>
                     </div>

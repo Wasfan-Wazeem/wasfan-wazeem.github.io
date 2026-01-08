@@ -4,26 +4,34 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
     {
-        title: 'E-Commerce Platform',
-        description: 'A full-stack online shopping application with real-time inventory management, secure payment processing, and an admin dashboard.',
-        tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-        image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80',
+        title: 'TrashSmart',
+        description: 'Smart waste management system optimizing collection monitoring and routes. Features real-time tracking of smart bins/trucks and an auction system for recyclable waste recovery.',
+        tags: ['React', 'Spring Boot', 'IoT/Arduino', 'PostgreSQL'],
+        image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80',
         github: '#',
         live: '#'
     },
     {
-        title: 'Task Management Dashboard',
-        description: 'Collaborative project management tool with drag-and-drop kanban boards, real-time updates through WebSockets, and team features.',
-        tags: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind'],
-         image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
+        title: 'Hekto AI E-Commerce',
+        description: 'Furniture marketplace with an AI shopping assistant. Built with headless CMS for real-time inventory sync and secure Stripe checkout pipeline.',
+        tags: ['Next.js', 'Sanity CMS', 'Stripe', 'AI SDK'],
+        image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=800&q=80',
         github: '#',
         live: '#'
     },
     {
-        title: 'AI Content Generator',
-        description: 'SaaS application leveraging OpenAI API to help marketers generate blog posts, social media captions, and ad copy.',
-        tags: ['React', 'Python', 'FastAPI', 'OpenAI'],
-         image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
+        title: 'Fix Fast Buddy',
+        description: 'Real-time vehicle breakdown assistance system. Implemented location-based technician matching and direct request handling workflows.',
+        tags: ['Android (Kotlin)', 'Firebase', 'Google Maps API'],
+        image: 'https://images.unsplash.com/photo-1625047903702-865d6d4e829d?w=800&q=80',
+        github: '#',
+        live: '#'
+    },
+    {
+        title: 'ZORO E-Commerce',
+        description: 'Full-featured MERN stack e-commerce app with admin dashboard for comprehensive product, order, and revenue analytics management.',
+        tags: ['React', 'Node.js', 'MongoDB', 'Redux'],
+        image: 'https://images.unsplash.com/photo-1472851294608-415522f96319?w=800&q=80',
         github: '#',
         live: '#'
     }

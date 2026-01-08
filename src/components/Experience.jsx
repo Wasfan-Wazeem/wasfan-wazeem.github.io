@@ -4,25 +4,18 @@ import { Briefcase, Calendar } from 'lucide-react';
 
 const experiences = [
   {
-    company: 'Tech Innovations Inc.',
-    role: 'Senior React Developer',
-    period: '2023 - Present',
-    description: 'Leading a team of 5 developers to build a next-gen SaaS platform. Improved performance by 40% using Next.js and advanced caching strategies.',
-    skills: ['React', 'Next.js', 'AWS', 'GraphQL']
+    company: 'WSO2 LLC, Sri Lanka',
+    role: 'Software Engineer Intern',
+    period: 'Nov 2024 - Apr 2025',
+    description: 'Contributed to Choreo R&D, enabling Mobile CI/CD for Android. Designed new mobile app component, implemented automated builds using Argo Workflows, Docker, and Azure Blob Storage.',
+    skills: ['React', 'Go', 'Ballerina', 'Kubernetes', 'Docker']
   },
   {
-    company: 'Creative Solutions Agency',
-    role: 'Full Stack Developer',
-    period: '2021 - 2023',
-    description: 'Developed and maintained high-traffic e-commerce sites. Implemented secure payment gateways and optimized manufacturing logic.',
-    skills: ['Node.js', 'Express', 'PostgreSQL', 'Stripe']
-  },
-  {
-    company: 'Startup Hub',
-    role: 'Frontend Developer',
-    period: '2019 - 2021',
-    description: 'Collaborated with designers to translate Figma designs into pixel-perfect React components. Built interactive dashboards for data visualization.',
-    skills: ['React', 'D3.js', 'Redux', 'SASS']
+    company: 'Legacy Health LLC, Sri Lanka',
+    role: 'Executive Operations',
+    period: 'Nov 2020 - Feb 2022',
+    description: 'Managed executive operations and coordinated cross-functional teams to ensure optimized workflows and operational efficiency.',
+    skills: ['Operations', 'Team Leadership', 'Management']
   }
 ];
 

@@ -14,29 +14,25 @@ const About = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                         <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6">
                             Crafting digital experiences <br />
                             <span className="text-neon-green">that matter.</span>
                         </h2>
                         <p className="text-gray-400 mb-6 leading-relaxed">
-                            I'm a passionate React developer with over 5 years of experience building scalable, performant web applications. I specialize in creating intuitive user interfaces that combine beautiful design with exceptional functionality.
+                            I'm an Information Systems undergraduate at UCSC with a strong IT background. I've demonstrated leadership as Captain of the Wrestling Team and have a proven track record in hackathons.
                         </p>
                         <p className="text-gray-400 mb-8 leading-relaxed">
-                             My expertise spans the entire frontend ecosystem, from React and Next.js to TypeScript and modern CSS frameworks. I'm committed to writing clean, maintainable code and staying current with the latest web technologies.
+                             My expertise spans the entire frontend and backend ecosystem, from React and Next.js to Cloud Native technologies like Kubernetes and Docker. I'm committed to continuous learning and solving complex problems.
                         </p>
                         
                         <div className="grid grid-cols-3 gap-6">
                             <div>
-                                <h4 className="text-2xl font-bold text-white mb-1">45+</h4>
-                                <p className="text-sm text-gray-500">Happy Clients</p>
+                                <h4 className="text-2xl font-bold text-white mb-1">3.47</h4>
+                                <p className="text-sm text-gray-500">CGPA (Reading)</p>
                             </div>
-                             <div>
-                                <h4 className="text-2xl font-bold text-white mb-1">2.5k+</h4>
-                                <p className="text-sm text-gray-500">Code Commits</p>
-                            </div>
-                             <div>
-                                <h4 className="text-2xl font-bold text-white mb-1">500+</h4>
-                                <p className="text-sm text-gray-500">Github Stars</p>
+                            <div>
+                                <h4 className="text-2xl font-bold text-white mb-1">Dean's</h4>
+                                <p className="text-sm text-gray-500">List Awardee</p>
                             </div>
                         </div>
                     </motion.div>
@@ -59,15 +55,15 @@ const About = () => {
                             <ul className="space-y-4 text-gray-400">
                                 <li className="flex items-start gap-3">
                                     <span className="text-neon-green mt-1">▹</span>
-                                    <span>Specialized in building scalable web applications with modern technologies.</span>
+                                    <span>Full Stack Development (React, Node, Java Spring).</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="text-neon-green mt-1">▹</span>
-                                    <span>Strong focus on UI/UX best practices and accessibility.</span>
+                                    <span>Cloud & DevOps (Docker, K8s, Azure, GitOps).</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="text-neon-green mt-1">▹</span>
-                                    <span>Experienced in Agile methodologies and team leadership.</span>
+                                    <span>Mobile App Development (React Native, Android).</span>
                                 </li>
                             </ul>
                         </div>

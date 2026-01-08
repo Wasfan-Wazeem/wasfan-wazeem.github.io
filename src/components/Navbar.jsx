@@ -8,9 +8,10 @@ const Navbar = () => {
 
     const links = [
         { name: 'About', to: '#about' },
-        { name: 'Skills', to: '#skills' },
+        { name: 'Experience', to: '#experience' },
         { name: 'Projects', to: '#projects' },
-        { name: 'Services', to: '#services' },
+        { name: 'Skills', to: '#tech-stack' },
+        { name: 'Education', to: '#education' },
         { name: 'Contact', to: '#contact' },
     ];
 
@@ -22,7 +23,7 @@ const Navbar = () => {
                         <div className="p-2 bg-gradient-to-tr from-green-400 to-green-600 rounded-lg group-hover:shadow-[0_0_20px_rgba(74,222,128,0.5)] transition-all duration-300">
                             <Code2 className="w-6 h-6 text-black" />
                         </div>
-                        <span className="text-xl font-bold font-mono tracking-tighter">Alex<span className="text-neon-green">.dev</span></span>
+                        <span className="text-xl font-bold font-mono tracking-tighter">Wasfan<span className="text-neon-green">.dev</span></span>
                     </Link>
 
                     {/* Desktop Menu */}
