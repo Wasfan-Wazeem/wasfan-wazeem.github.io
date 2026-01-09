@@ -5,6 +5,7 @@ import { Briefcase, Calendar } from 'lucide-react';
 const experiences = [
   {
     company: 'WSO2 LLC, Sri Lanka',
+    logo: '/logos/wso2.png',
     role: 'Software Engineer Intern',
     period: 'Nov 2024 - Apr 2025',
     description: [
@@ -18,6 +19,7 @@ const experiences = [
   },
   {
     company: 'Legacy Health LLC, Sri Lanka',
+    logo: '/logos/legacy_health.png',
     role: 'Executive Operations',
     period: 'Nov 2020 - Feb 2022',
     description: [
@@ -69,15 +71,24 @@ const Experience = () => {
 
                             {/* Content Side */}
                             <div className={`${index % 2 === 0 ? 'md:order-1 md:text-right' : 'md:order-2 md:pl-8'} pl-12 md:pl-0`}>
-                                <div className="p-6 rounded-2xl bg-tech-gray/50 border border-white/5 hover:border-white/10 transition-colors group">
-                                    <h3 className="text-xl font-bold text-white group-hover:text-neon-green transition-colors">{exp.role}</h3>
-                                    <h4 className="text-neon-green/80 font-mono text-sm mb-4">{exp.company}</h4>
+                                <div className="p-6 rounded-2xl bg-tech-gray/50 border border-white/5 hover:border-white/10 transition-colors group relative overflow-hidden">
+                                    <div className={`flex items-start gap-4 mb-4 ${index % 2 === 0 ? 'md:flex-row-reverse md:text-right' : ''}`}>
+                                        <div className="shrink-0">
+                                            <div className="w-14 h-14 rounded-xl p-1.5 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                                <img src={exp.logo} alt={exp.company} className="w-full h-full object-contain" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-xl font-bold text-white group-hover:text-neon-green transition-colors">{exp.role}</h3>
+                                            <h4 className="text-neon-green/80 font-mono text-sm">{exp.company}</h4>
+                                        </div>
+                                    </div>
                                     
                                     <ul className={`text-gray-400 text-sm mb-4 leading-relaxed space-y-2 ${index % 2 === 0 ? 'md:bg-gradient-to-l' : ''}`}>
                                         {exp.description.map((item, i) => (
                                             <li key={i} className={`flex gap-2 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
                                                 <span className="text-neon-green shrink-0 mt-1">▹</span>
-                                                <span>{item}</span>
+                                                <span className={`${index % 2 === 0 ? 'md:text-right' : ''}`}>{item}</span>
                                             </li>
                                         ))}
                                     </ul>

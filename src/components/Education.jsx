@@ -19,7 +19,7 @@ const educationData = [
             'Silver Medalist - Inter-University Wrestling 2024',
             'Bronze Medalist - SLUG Wrestling 2023'
         ],
-        icon: GraduationCap,
+        logo: '/logos/ucsc.png',
         color: 'text-neon-green'
     },
     {
@@ -41,7 +41,7 @@ const educationData = [
                 subjects: ['Information Systems', 'Software Development', 'Computer & Network Technology']
             }
         ],
-        icon: BookOpen,
+        logo: '/logos/bcs.png',
         color: 'text-blue-400'
     },
     {
@@ -50,7 +50,7 @@ const educationData = [
         period: '2018 – 2020',
         description: 'Successfully completed secondary education with a focus on Mathematics.',
         features: [],
-        icon: Star,
+        logo: '/logos/stc_matale.png',
         color: 'text-purple-400'
     }
 ];
@@ -93,8 +93,8 @@ const Education = () => {
                                 
                                 {/* Icon Marker */}
                                 <div className="hidden md:flex flex-col items-center justify-start min-w-[56px]">
-                                    <div className={`w-14 h-14 rounded-2xl bg-tech-gray border border-white/10 flex items-center justify-center z-10 ${edu.color} shadow-lg shadow-black/50`}>
-                                        <edu.icon className="w-7 h-7" />
+                                    <div className="w-14 h-14 rounded-xl p-1.5 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 z-10 overflow-hidden">
+                                        <img src={edu.logo} alt={edu.school} className="w-full h-full object-contain" />
                                     </div>
                                 </div>
 
