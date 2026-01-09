@@ -8,18 +8,56 @@ const About = () => {
              <div className="absolute top-0 right-0 w-64 h-64 bg-neon-green/5 rounded-full blur-[100px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid md:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-3 gap-12 items-center">
+                    {/* Profile Photo */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        className="relative hidden lg:block"
+                    >
+                        <div className="relative group">
+                            {/* Decorative frame */}
+                            <div className="absolute -inset-4 border border-neon-green/20 rounded-2xl -z-10 group-hover:scale-105 transition-transform duration-500"></div>
+                            <div className="absolute inset-0 bg-neon-green/10 rounded-2xl blur-2xl -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            
+                            <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative z-10">
+                                <img 
+                                    src="/profile.jpg" 
+                                    alt="Wasfan Wazeem" 
+                                    className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
+                                />
+                            </div>
+                            
+                            {/* Status badge */}
+                            <div className="absolute -bottom-4 -right-4 bg-tech-gray border border-white/10 px-4 py-2 rounded-lg shadow-xl z-20 flex items-center gap-2">
+                                <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse"></span>
+                                <span className="text-xs font-mono text-white">Software Engineer</span>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* Bio Text */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
+                        className="lg:col-span-1"
                     >
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">
                             Crafting digital experiences <br />
                             <span className="text-neon-green">that matter.</span>
                         </h2>
+                        
+                        {/* Mobile Profile Photo (Visible only on small screens) */}
+                        <div className="lg:hidden mb-8 max-w-[200px] mx-auto">
+                            <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                                <img src="/profile.jpg" alt="Wasfan Wazeem" className="w-full h-full object-cover" />
+                            </div>
+                        </div>
+
                         <p className="text-gray-400 mb-6 leading-relaxed">
-                            I am an Information Systems undergraduate at the University of Colombo School of Computing (UCSC), specializing in the intersection of business logic and modern software engineering.
+                            I am <span className="text-white font-semibold">Wasfan Wazeem</span>, an Information Systems undergraduate at the University of Colombo School of Computing (UCSC), specializing in the intersection of business logic and modern software engineering.
                         </p>
                         <p className="text-gray-400 mb-8 leading-relaxed">
                             A double University Colours awardee (2023 & 2024) and Captain of the University Wrestling Team, I leverage a disciplined mindset to lead technical initiatives and solve complex challenges with excellence.
@@ -36,7 +74,7 @@ const About = () => {
                             </div>
                             <div>
                                 <h4 className="text-2xl font-bold text-white mb-1">Colours</h4>
-                                <p className="text-sm text-gray-500">2023 & 2024</p>
+                                <p className="text-sm text-gray-500">2023/24</p>
                             </div>
                         </div>
                     </motion.div>

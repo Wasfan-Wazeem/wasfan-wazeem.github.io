@@ -5,26 +5,26 @@ import { Github, ExternalLink } from 'lucide-react';
 const projects = [
     {
         title: 'TrashSmart - Waste Solution',
-        description: 'A smart waste management system optimizing collection monitoring and routes. Enables real-time tracking of smart bins and trucks, organization management, and an auction system for recyclable waste.',
+        description: 'A comprehensive smart waste management ecosystem optimizing collection monitoring and routes. Features a real-time web admin dashboard for organizations, a mobile app for field operations, and IoT-integrated bin tracking.',
         tags: ['Spring Boot', 'React Native', 'PostgreSQL', 'Docker', 'Arduino', 'Google Maps API', 'NativeWind', 'Tailwind CSS', 'REST API'],
-        image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80',
-        github: '#',
-        live: '#'
+        image: '/projects/trashsmart_mockup.png',
+        github: 'https://github.com/TrashSmart-G41',
+        live: 'https://trashsmart.duckdns.org/'
     },
     {
         title: 'Fix Fast Buddy',
         description: 'Real-time vehicle breakdown assistance system connecting users with nearby mechanics. Features location-based request distribution and separate workflows for individual mechanics and garages.',
         tags: ['Android SDK', 'Kotlin', 'PHP', 'MySQL', 'Firebase', 'Google Maps', 'Retrofit', 'REST API'],
         image: '/projects/fixfastbuddy_mockup.png',
-        github: '#',
-        live: '#'
+        github: 'https://github.com/Wasfan-Wazeem/Fix-Fast-Buddy',
+        live: 'https://github.com/Wasfan-Wazeem/Fix-Fast-Buddy'
     },
     {
         title: 'Hekto - AI E-Commerce',
         description: 'Furniture marketplace featuring an AI shopping assistant for natural language product discovery. Built with a headless CMS for real-time inventory synchronization and a secure stripe checkout pipeline.',
         tags: ['Next.js', 'Sanity CMS', 'Stripe', 'Clerk', 'Vercel AI SDK', 'Zustand', 'Tailwind CSS'],
         image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=800&q=80',
-        github: '#',
+        github: 'https://github.com/Wasfan-Wazeem/Furniture-Store-ecommerce-ai-platform',
         live: '#'
     },
     {
@@ -32,7 +32,7 @@ const projects = [
         description: 'Full-featured e-commerce platform with comprehensive admin dashboard. Includes advanced product filtering, secure Stripe payments, and JWT authentication with revenue analytics.',
         tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redux Toolkit', 'Stripe', 'JWT', 'MERN Stack'],
         image: '/projects/zoro_mockup.png',
-        github: '#',
+        github: 'https://github.com/Wasfan-Wazeem/zoro-ecommerce',
         live: '#'
     },
     {

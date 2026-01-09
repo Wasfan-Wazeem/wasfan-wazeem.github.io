@@ -39,7 +39,7 @@ const Contact = () => {
                             Let's Work Together
                         </h2>
                         <p className="text-gray-400 mb-12">
-                            Interested in hiring a Full Stack Engineer? Let's discuss how I can contribute to your team and build scalable solutions together.
+                            Interested in hiring a Software Engineer? Let's discuss how I can contribute to your team and build scalable solutions together.
                         </p>
 
                         <div className="space-y-6">
@@ -53,6 +53,16 @@ const Contact = () => {
                                 </div>
                             </div>
                             
+                             <div className="flex items-center gap-4 group">
+                                <div className="p-4 rounded-xl bg-white/5 border border-white/10 group-hover:border-neon-green/30 transition-colors">
+                                    <Phone className="w-6 h-6 text-neon-green" />
+                                </div>
+                                <div>
+                                    <h4 className="text-sm font-mono text-gray-500 mb-1">Phone</h4>
+                                    <a href="tel:+94775713000" className="text-lg font-bold hover:text-neon-green transition-colors">+94 77 571 3000</a>
+                                </div>
+                            </div>
+
                             <div className="flex items-center gap-4 group">
                                 <div className="p-4 rounded-xl bg-white/5 border border-white/10 group-hover:border-neon-green/30 transition-colors">
                                     <MapPin className="w-6 h-6 text-neon-green" />

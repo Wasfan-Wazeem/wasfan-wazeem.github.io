@@ -22,12 +22,13 @@ const Hero = () => {
           </div>
           
           
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
-            Building Scalable <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-blue-500">Digital Solutions</span>
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
+            Hi, I'm <span className="text-neon-green">Wasfan Wazeem.</span><br />
+            Software <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-blue-500">Engineer</span>
           </h1>
           
           <p className="text-gray-400 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
-            Full Stack Developer specializing in high-performance web and mobile ecosystems, delivering scalable digital solutions with a disciplined mindset.
+            Software Engineer specializing in high-performance web and mobile ecosystems, delivering scalable digital solutions with a disciplined mindset.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -96,7 +97,7 @@ const Hero = () => {
                             <div className="flex gap-4">
                                 <span className="text-gray-600 select-none">03</span>
                                 <div className="pl-4">
-                                    <span className="text-white">role:</span> <span className="text-green-400">'Full Stack Dev'</span><span className="text-white">,</span>
+                                    <span className="text-white">role:</span> <span className="text-green-400">'Software Engineer'</span><span className="text-white">,</span>
                                 </div>
                             </div>
                             <div className="flex gap-4">
