@@ -19,20 +19,24 @@ const About = () => {
                             <span className="text-neon-green">that matter.</span>
                         </h2>
                         <p className="text-gray-400 mb-6 leading-relaxed">
-                            I'm an Information Systems undergraduate at UCSC with a strong IT background. I've demonstrated leadership as Captain of the Wrestling Team and have a proven track record in hackathons.
+                            I am an Information Systems undergraduate at the University of Colombo School of Computing (UCSC), specializing in the intersection of business logic and modern software engineering.
                         </p>
                         <p className="text-gray-400 mb-8 leading-relaxed">
-                             My expertise spans the entire frontend and backend ecosystem, from React and Next.js to Cloud Native technologies like Kubernetes and Docker. I'm committed to continuous learning and solving complex problems.
+                            A double University Colours awardee (2023 & 2024) and Captain of the University Wrestling Team, I leverage a disciplined mindset to lead technical initiatives and solve complex challenges with excellence.
                         </p>
                         
                         <div className="grid grid-cols-3 gap-6">
                             <div>
                                 <h4 className="text-2xl font-bold text-white mb-1">3.47</h4>
-                                <p className="text-sm text-gray-500">CGPA (Reading)</p>
+                                <p className="text-sm text-gray-500">Current CGPA</p>
                             </div>
                             <div>
                                 <h4 className="text-2xl font-bold text-white mb-1">Dean's</h4>
-                                <p className="text-sm text-gray-500">List Awardee</p>
+                                <p className="text-sm text-gray-500">List Honors</p>
+                            </div>
+                            <div>
+                                <h4 className="text-2xl font-bold text-white mb-1">Colours</h4>
+                                <p className="text-sm text-gray-500">2023 & 2024</p>
                             </div>
                         </div>
                     </motion.div>
@@ -55,15 +59,15 @@ const About = () => {
                             <ul className="space-y-4 text-gray-400">
                                 <li className="flex items-start gap-3">
                                     <span className="text-neon-green mt-1">▹</span>
-                                    <span>Full Stack Development (React, Node, Java Spring).</span>
+                                    <span><strong>Full Stack Development</strong> – Building robust, scalable web applications using React, Node.js, and Java Spring.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="text-neon-green mt-1">▹</span>
-                                    <span>Cloud & DevOps (Docker, K8s, Azure, GitOps).</span>
+                                    <span><strong>Cloud & DevOps</strong> – Specialized in Docker, Kubernetes, and streamlining deployments through CI/CD pipelines.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="text-neon-green mt-1">▹</span>
-                                    <span>Mobile App Development (React Native, Android).</span>
+                                    <span><strong>Mobile Development</strong> – Engineering high-performance mobile applications with React Native and Native Android.</span>
                                 </li>
                             </ul>
                         </div>

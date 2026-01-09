@@ -7,15 +7,27 @@ const experiences = [
     company: 'WSO2 LLC, Sri Lanka',
     role: 'Software Engineer Intern',
     period: 'Nov 2024 - Apr 2025',
-    description: 'Contributed to Choreo R&D, enabling Mobile CI/CD for Android. Designed new mobile app component, implemented automated builds using Argo Workflows, Docker, and Azure Blob Storage.',
-    skills: ['React', 'Go', 'Ballerina', 'Kubernetes', 'Docker']
+    description: [
+        'Contributed to Choreo R&D, enabling Mobile CI/CD for Android applications.',
+        'Designed and implemented a new Mobile Application component in Choreo.',
+        'Conducted competitor analysis and created UI/UX mockups for mobile build workflows.',
+        'Developed custom Argo Workflows and Docker images for automated Android builds.',
+        'Integrated Azure Blob Storage for artifact hosting and verified secure signing key management using Kubernetes secrets.'
+    ],
+    skills: ['React', 'TypeScript', 'Go', 'Ballerina', 'GraphQL', 'Kubernetes', 'Docker', 'Argo Workflows']
   },
   {
     company: 'Legacy Health LLC, Sri Lanka',
     role: 'Executive Operations',
     period: 'Nov 2020 - Feb 2022',
-    description: 'Managed executive operations and coordinated cross-functional teams to ensure optimized workflows and operational efficiency.',
-    skills: ['Operations', 'Team Leadership', 'Management']
+    description: [
+        'Managed revenue cycle operations across multiple healthcare facilities.',
+        'Ensured accurate verification of benefits and client communications.',
+        'Gained hands-on experience in front desk operations for surgeries and diagnostics.',
+        'Skilled in multiple practice management systems (Cerner, Nextech, Modmed, etc.).',
+        'Contributed to team management, onboarding, and training newcomers.'
+    ],
+    skills: ['Revenue Cycle Management', 'Team Leadership', 'Operations', 'Training']
   }
 ];
 
@@ -60,9 +72,15 @@ const Experience = () => {
                                 <div className="p-6 rounded-2xl bg-tech-gray/50 border border-white/5 hover:border-white/10 transition-colors group">
                                     <h3 className="text-xl font-bold text-white group-hover:text-neon-green transition-colors">{exp.role}</h3>
                                     <h4 className="text-neon-green/80 font-mono text-sm mb-4">{exp.company}</h4>
-                                    <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-                                        {exp.description}
-                                    </p>
+                                    
+                                    <ul className={`text-gray-400 text-sm mb-4 leading-relaxed space-y-2 ${index % 2 === 0 ? 'md:bg-gradient-to-l' : ''}`}>
+                                        {exp.description.map((item, i) => (
+                                            <li key={i} className={`flex gap-2 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
+                                                <span className="text-neon-green shrink-0 mt-1">▹</span>
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
                                     <div className={`flex flex-wrap gap-2 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
                                         {exp.skills.map(skill => (
                                             <span key={skill} className="px-2 py-1 text-xs font-mono rounded bg-white/5 border border-white/10 text-gray-400">

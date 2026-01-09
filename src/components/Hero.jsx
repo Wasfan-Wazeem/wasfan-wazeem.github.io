@@ -4,7 +4,7 @@ import { ArrowRight, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center pt-20">
+    <section className="relative min-h-[90vh] flex items-center justify-center pt-10 md:pt-0">
       {/* Glow Effects */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-neon-green/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-[80px] pointer-events-none" />
@@ -27,7 +27,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-gray-400 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
-            An Information Systems undergraduate with a strong IT background, passionate about using technology to solve real-world problems.
+            Full Stack Developer specializing in high-performance web and mobile ecosystems, delivering scalable digital solutions with a disciplined mindset.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -41,10 +41,11 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="mt-16 grid grid-cols-3 gap-8 border-t border-white/10 pt-8">
+          <div className="mt-10 grid grid-cols-3 gap-6 border-t border-white/10 pt-6">
             {[
-              { label: 'Years Experience', value: '3+' },
-              { label: 'Major Projects', value: '4+' },
+              { label: 'Technical Expertise', value: '3+' },
+              { label: 'Major Projects', value: '5+' },
+              { label: 'University Colours', value: '2023/24' },
               // { label: 'Hackathons', value: '10+' },
             ].map((stat, index) => (
               <div key={index}>
@@ -101,7 +102,7 @@ const Hero = () => {
                             <div className="flex gap-4">
                                 <span className="text-gray-600 select-none">04</span>
                                 <div className="pl-4">
-                                    <span className="text-white">skills:</span> <span className="text-yellow-300">['React', 'Go', 'K8s']</span><span className="text-white">,</span>
+                                    <span className="text-white">skills:</span> <span className="text-yellow-300">['React.js', 'Node.js', 'Android']</span><span className="text-white">,</span>
                                 </div>
                             </div>
                             <div className="flex gap-4">

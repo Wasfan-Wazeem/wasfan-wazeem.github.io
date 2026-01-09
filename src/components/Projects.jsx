@@ -4,34 +4,42 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
     {
-        title: 'TrashSmart',
-        description: 'Smart waste management system optimizing collection monitoring and routes. Features real-time tracking of smart bins/trucks and an auction system for recyclable waste recovery.',
-        tags: ['React', 'Spring Boot', 'IoT/Arduino', 'PostgreSQL'],
+        title: 'TrashSmart - Waste Solution',
+        description: 'A smart waste management system optimizing collection monitoring and routes. Enables real-time tracking of smart bins and trucks, organization management, and an auction system for recyclable waste.',
+        tags: ['Spring Boot', 'React Native', 'PostgreSQL', 'Docker', 'Arduino', 'Google Maps API', 'NativeWind', 'Tailwind CSS', 'REST API'],
         image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80',
         github: '#',
         live: '#'
     },
     {
-        title: 'Hekto AI E-Commerce',
-        description: 'Furniture marketplace with an AI shopping assistant. Built with headless CMS for real-time inventory sync and secure Stripe checkout pipeline.',
-        tags: ['Next.js', 'Sanity CMS', 'Stripe', 'AI SDK'],
+        title: 'Fix Fast Buddy',
+        description: 'Real-time vehicle breakdown assistance system connecting users with nearby mechanics. Features location-based request distribution and separate workflows for individual mechanics and garages.',
+        tags: ['Android SDK', 'Kotlin', 'PHP', 'MySQL', 'Firebase', 'Google Maps', 'Retrofit', 'REST API'],
+        image: '/projects/fixfastbuddy_mockup.png',
+        github: '#',
+        live: '#'
+    },
+    {
+        title: 'Hekto - AI E-Commerce',
+        description: 'Furniture marketplace featuring an AI shopping assistant for natural language product discovery. Built with a headless CMS for real-time inventory synchronization and a secure stripe checkout pipeline.',
+        tags: ['Next.js', 'Sanity CMS', 'Stripe', 'Clerk', 'Vercel AI SDK', 'Zustand', 'Tailwind CSS'],
         image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=800&q=80',
         github: '#',
         live: '#'
     },
     {
-        title: 'Fix Fast Buddy',
-        description: 'Real-time vehicle breakdown assistance system. Implemented location-based technician matching and direct request handling workflows.',
-        tags: ['Android (Kotlin)', 'Firebase', 'Google Maps API'],
-        image: 'https://images.unsplash.com/photo-1625047903702-865d6d4e829d?w=800&q=80',
+        title: 'ZORO - MERN E-Commerce',
+        description: 'Full-featured e-commerce platform with comprehensive admin dashboard. Includes advanced product filtering, secure Stripe payments, and JWT authentication with revenue analytics.',
+        tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redux Toolkit', 'Stripe', 'JWT', 'MERN Stack'],
+        image: '/projects/zoro_mockup.png',
         github: '#',
         live: '#'
     },
     {
-        title: 'ZORO E-Commerce',
-        description: 'Full-featured MERN stack e-commerce app with admin dashboard for comprehensive product, order, and revenue analytics management.',
-        tags: ['React', 'Node.js', 'MongoDB', 'Redux'],
-        image: 'https://images.unsplash.com/photo-1472851294608-415522f96319?w=800&q=80',
+        title: 'MyHR - HR Management System',
+        description: 'A comprehensive Human Resource Management system featuring full CRUD operations for executive and user record management. Designed for administrative efficiency with a secure authentication layer.',
+        tags: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'CRUD'],
+        image: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=800&q=80',
         github: '#',
         live: '#'
     }
@@ -75,7 +83,7 @@ const Projects = () => {
 
                             <div className="p-6 relative z-20">
                                 <h3 className="text-xl font-bold mb-3 group-hover:text-neon-green transition-colors">{project.title}</h3>
-                                <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+                                <p className="text-gray-400 text-sm mb-4 line-clamp-5">
                                     {project.description}
                                 </p>
                                 
