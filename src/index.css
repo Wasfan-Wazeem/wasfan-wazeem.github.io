@@ -7,9 +7,19 @@
 @layer base {
   body {
     @apply bg-tech-black text-white font-sans antialiased overflow-x-hidden;
+    /* Custom Scrollbar for Modals */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
   }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-tech-black;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-white/20 rounded-full transition-colors hover:bg-neon-green/50;
+  }
+}
 
-  /* Hide cursor on desktop to use custom cursor */
+/* Hide cursor on desktop to use custom cursor */
   @media (pointer: fine) {
     * {
       cursor: none !important;
