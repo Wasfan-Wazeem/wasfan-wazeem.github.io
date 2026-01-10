@@ -54,7 +54,7 @@ const Experience = () => {
 
             <div className="relative">
                 {/* Vertical Line */}
-                <div className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2" />
+                <div className="absolute left-[28px] md:left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2" />
 
                 <div className="space-y-12">
                     {experiences.map((exp, index) => (
@@ -78,7 +78,7 @@ const Experience = () => {
                                     ease: "easeInOut"
                                 }}
                                 style={{ x: "-50%" }}
-                                className="absolute left-[20px] md:left-1/2 w-4 h-4 bg-tech-black border-2 border-neon-green rounded-full z-10" 
+                                className="absolute left-[28px] md:left-1/2 w-4 h-4 bg-tech-black border-2 border-neon-green rounded-full z-10" 
                             />
 
                             {/* Content Side */}

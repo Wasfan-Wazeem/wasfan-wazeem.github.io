@@ -84,28 +84,28 @@ const Education = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="relative pl-8 md:pl-0"
+                            className="relative"
                         >
-                            {/* Timeline Line for Desktop */}
-                            <div className="hidden md:block absolute left-[28px] top-0 bottom-0 w-px bg-white/10" />
+                            {/* Timeline Line */}
+                            <div className="absolute left-[28px] top-0 bottom-0 w-px bg-white/10" />
                             
                             <div className={`flex flex-col md:flex-row gap-8 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
                                 
                                 {/* Icon Marker */}
-                                <div className="hidden md:flex flex-col items-center justify-start min-w-[56px]">
+                                <div className="flex flex-col items-center justify-start min-w-[56px] absolute left-0 top-0 md:relative md:left-auto md:top-auto z-10">
                                     <motion.div 
                                         animate={{ 
                                             boxShadow: ["0 0 0px rgba(255,255,255,0)", "0 0 15px rgba(255,255,255,0.2)", "0 0 0px rgba(255,255,255,0)"]
                                         }}
                                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                                        className="w-14 h-14 rounded-xl p-1.5 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 z-10 overflow-hidden"
+                                        className="w-14 h-14 rounded-xl p-1.5 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 overflow-hidden bg-tech-black border border-white/5"
                                     >
                                         <img src={edu.logo} alt={edu.school} className="w-full h-full object-contain" />
                                     </motion.div>
                                 </div>
 
                                 {/* Content Card */}
-                                <div className="flex-1">
+                                <div className="flex-1 pl-20 md:pl-0">
                                     <div className="p-8 rounded-2xl bg-tech-gray/50 border border-white/5 hover:border-white/10 transition-all group backdrop-blur-sm">
                                         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                                             <div>
