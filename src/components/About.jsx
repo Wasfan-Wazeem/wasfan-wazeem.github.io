@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import LazyImage from './LazyImage';
 
 const About = () => {
     return (
@@ -22,10 +23,11 @@ const About = () => {
                             <div className="absolute inset-0 bg-neon-green/10 rounded-2xl blur-2xl -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             
                             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative z-10">
-                                <img 
+                                <LazyImage
                                     src="/profile.jpg" 
                                     alt="Wasfan Wazeem" 
                                     className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
+                                    placeholderClassName="rounded-2xl"
                                 />
                             </div>
                             

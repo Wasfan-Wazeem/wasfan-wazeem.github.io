@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, ArrowRight } from 'lucide-react';
 import ProjectModal from './ProjectModal';
+import LazyImage from './LazyImage';
 
 const projects = [
     {
@@ -115,7 +116,7 @@ const Projects = () => {
                             {/* Image Placeholder */}
                             <div className="h-48 overflow-hidden relative">
                                 <div className="absolute inset-0 bg-gradient-to-t from-tech-gray to-transparent z-10" />
-                                <img 
+                                <LazyImage
                                     src={project.image} 
                                     alt={project.title} 
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
