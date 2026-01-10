@@ -93,9 +93,15 @@ const Education = () => {
                                 
                                 {/* Icon Marker */}
                                 <div className="hidden md:flex flex-col items-center justify-start min-w-[56px]">
-                                    <div className="w-14 h-14 rounded-xl p-1.5 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 z-10 overflow-hidden">
+                                    <motion.div 
+                                        animate={{ 
+                                            boxShadow: ["0 0 0px rgba(255,255,255,0)", "0 0 15px rgba(255,255,255,0.2)", "0 0 0px rgba(255,255,255,0)"]
+                                        }}
+                                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                                        className="w-14 h-14 rounded-xl p-1.5 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 z-10 overflow-hidden"
+                                    >
                                         <img src={edu.logo} alt={edu.school} className="w-full h-full object-contain" />
-                                    </div>
+                                    </motion.div>
                                 </div>
 
                                 {/* Content Card */}
@@ -140,7 +146,15 @@ const Education = () => {
                                                 <ul className="space-y-2">
                                                     {edu.achievements.map((ach, i) => (
                                                         <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-                                                            <Medal className="w-4 h-4 text-yellow-500 mt-0.5 shrink-0" />
+                                                    <motion.div
+                                                        animate={{ 
+                                                            scale: [1, 1.2, 1],
+                                                            rotate: [0, 5, -5, 0]
+                                                        }}
+                                                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: i * 0.1 }}
+                                                    >
+                                                        <Medal className="w-4 h-4 text-yellow-500 mt-0.5 shrink-0" />
+                                                    </motion.div>
                                                             {ach}
                                                         </li>
                                                     ))}
@@ -154,7 +168,14 @@ const Education = () => {
                                                 {edu.details.map((detail, i) => (
                                                     <div key={i}>
                                                         <h4 className="flex items-center gap-2 font-bold text-gray-200 mb-2 text-sm">
-                                                            <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                                            <motion.div 
+                                                                animate={{ 
+                                                                    scale: [1, 1.5, 1],
+                                                                    opacity: [0.5, 1, 0.5]
+                                                                }}
+                                                                transition={{ duration: 2, repeat: Infinity, delay: i * 0.2 }}
+                                                                className="w-1.5 h-1.5 rounded-full bg-blue-400 shadow-[0_0_8px_rgba(96,165,250,0.6)]"
+                                                            />
                                                             {detail.title}
                                                         </h4>
                                                         <div className="flex flex-wrap gap-2 pl-4">

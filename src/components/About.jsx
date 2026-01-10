@@ -96,15 +96,33 @@ const About = () => {
                             </h3>
                             <ul className="space-y-4 text-gray-400">
                                 <li className="flex items-start gap-3">
-                                    <span className="text-neon-green mt-1">▹</span>
+                                    <motion.span 
+                                        animate={{ opacity: [0.4, 1, 0.4] }}
+                                        transition={{ duration: 2, repeat: Infinity, delay: 0 }}
+                                        className="text-neon-green mt-1 drop-shadow-[0_0_5px_rgba(0,255,65,0.5)]"
+                                    >
+                                        ▹
+                                    </motion.span>
                                     <span><strong>Full Stack Development</strong> – Building robust, scalable web applications using React, Node.js, and Java Spring.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="text-neon-green mt-1">▹</span>
+                                    <motion.span 
+                                        animate={{ opacity: [0.4, 1, 0.4] }}
+                                        transition={{ duration: 2, repeat: Infinity, delay: 0 }}
+                                        className="text-neon-green mt-1 drop-shadow-[0_0_5px_rgba(0,255,65,0.5)]"
+                                    >
+                                        ▹
+                                    </motion.span>
                                     <span><strong>Cloud & DevOps</strong> – Specialized in Docker, Kubernetes, and streamlining deployments through CI/CD pipelines.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="text-neon-green mt-1">▹</span>
+                                    <motion.span 
+                                        animate={{ opacity: [0.4, 1, 0.4] }}
+                                        transition={{ duration: 2, repeat: Infinity, delay: 0 }}
+                                        className="text-neon-green mt-1 drop-shadow-[0_0_5px_rgba(0,255,65,0.5)]"
+                                    >
+                                        ▹
+                                    </motion.span>
                                     <span><strong>Mobile Development</strong> – Engineering high-performance mobile applications with React Native and Native Android.</span>
                                 </li>
                             </ul>

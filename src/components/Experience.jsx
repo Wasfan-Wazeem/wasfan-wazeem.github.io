@@ -67,7 +67,19 @@ const Experience = () => {
                             className="relative grid md:grid-cols-2 gap-8 items-center"
                         >
                             {/* Dot on Timeline */}
-                            <div className="absolute left-[20px] md:left-1/2 w-4 h-4 bg-tech-black border-2 border-neon-green rounded-full -translate-x-1/2 z-10 shadow-[0_0_10px_rgba(0,255,65,0.5)]" />
+                            <motion.div 
+                                animate={{ 
+                                    boxShadow: ["0 0 10px rgba(0,255,65,0.3)", "0 0 20px rgba(0,255,65,0.6)", "0 0 10px rgba(0,255,65,0.3)"],
+                                    scale: [1, 1.2, 1]
+                                }}
+                                transition={{
+                                    duration: 2,
+                                    repeat: Infinity,
+                                    ease: "easeInOut"
+                                }}
+                                style={{ x: "-50%" }}
+                                className="absolute left-[20px] md:left-1/2 w-4 h-4 bg-tech-black border-2 border-neon-green rounded-full z-10" 
+                            />
 
                             {/* Content Side */}
                             <div className={`${index % 2 === 0 ? 'md:order-1 md:text-right' : 'md:order-2 md:pl-8'} pl-12 md:pl-0`}>
@@ -87,7 +99,13 @@ const Experience = () => {
                                     <ul className={`text-gray-400 text-sm mb-4 leading-relaxed space-y-2 ${index % 2 === 0 ? 'md:bg-gradient-to-l' : ''}`}>
                                         {exp.description.map((item, i) => (
                                             <li key={i} className={`flex gap-2 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
-                                                <span className="text-neon-green shrink-0 mt-1">▹</span>
+                                                <motion.span 
+                                                    animate={{ opacity: [0.4, 1, 0.4] }}
+                                                    transition={{ duration: 2, repeat: Infinity, delay: i * 0.2 }}
+                                                    className="text-neon-green shrink-0 mt-1 drop-shadow-[0_0_5px_rgba(0,255,65,0.5)]"
+                                                >
+                                                    ▹
+                                                </motion.span>
                                                 <span className={`${index % 2 === 0 ? 'md:text-right' : ''}`}>{item}</span>
                                             </li>
                                         ))}

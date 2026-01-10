@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, Download, ExternalLink, Code2, Cpu, Database, Smartphone, Globe, Layers, Terminal, Zap, CheckCircle2, ArrowRight } from 'lucide-react';
+import MagneticButton from './MagneticButton';
 
 const Hero = () => {
   return (
@@ -32,14 +33,18 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <a href="#projects" className="group px-8 py-4 bg-neon-green text-black font-bold rounded-lg hover:bg-green-400 transition-all flex items-center gap-2">
-              View My Work
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a href="/resume.pdf" className="px-8 py-4 bg-transparent border border-white/20 hover:border-white/50 text-white rounded-lg transition-all flex items-center gap-2">
-              Download CV
-              <Download className="w-4 h-4" />
-            </a>
+            <MagneticButton>
+              <a href="#projects" className="group px-8 py-4 bg-neon-green text-black font-bold rounded-lg hover:bg-green-400 transition-all flex items-center gap-2">
+                View My Work
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </MagneticButton>
+            <MagneticButton>
+              <a href="/Wasfan_Wazeem.pdf" className="px-8 py-4 bg-transparent border border-white/20 hover:border-white/50 text-white rounded-lg transition-all flex items-center gap-2">
+                Download CV
+                <Download className="w-4 h-4" />
+              </a>
+            </MagneticButton>
           </div>
 
           <div className="mt-10 grid grid-cols-3 gap-6 border-t border-white/10 pt-6">

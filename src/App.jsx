@@ -12,10 +12,16 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Research from './components/Research';
 import Certifications from './components/Certifications';
+import ReactiveBackground from './components/ReactiveBackground';
+import CustomCursor from './components/CustomCursor';
+import ScrollProgress from './components/ScrollProgress';
 
 function App() {
   return (
     <Router>
+      <ScrollProgress />
+      <ReactiveBackground />
+      <CustomCursor />
       <Layout>
         <div id="home">
             <Hero />

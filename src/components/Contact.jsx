@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Send, Mail, MapPin, Phone, Github, Linkedin } from 'lucide-react';
+import MagneticButton from './MagneticButton';
 
 const Contact = () => {
     const [formData, setFormData] = React.useState({
@@ -145,10 +146,12 @@ const Contact = () => {
                                 ></textarea>
                             </div>
 
-                            <button type="submit" className="w-full py-4 bg-neon-green text-black font-bold rounded-lg hover:bg-green-400 transition-colors flex items-center justify-center gap-2">
-                                Send Message
-                                <Send className="w-4 h-4" />
-                            </button>
+                            <MagneticButton>
+                                <button type="submit" className="w-full py-4 bg-neon-green text-black font-bold rounded-lg hover:bg-green-400 transition-colors flex items-center justify-center gap-2">
+                                    Send Message
+                                    <Send className="w-4 h-4" />
+                                </button>
+                            </MagneticButton>
                         </form>
                     </motion.div>
                 </div>

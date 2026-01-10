@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import TechTag from './TechTag';
 
 const skills = [
     // Languages
@@ -69,21 +70,9 @@ const TechStack = () => {
                 </p>
             </motion.div>
 
-            <div className="flex flex-wrap justify-center gap-4">
-                {skills.map((skill, index) => (
-                    <motion.div
-                        key={skill.name}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.05 }}
-                        whileHover={{ scale: 1.05, y: -5 }}
-                        className="px-6 py-3 rounded-xl bg-tech-gray border border-white/5 hover:border-neon-green/30 transition-all cursor-default group"
-                    >
-                        <span className={`font-mono font-bold ${skill.color} opacity-90 group-hover:opacity-100`}>
-                            {skill.name}
-                        </span>
-                    </motion.div>
+            <div className="flex flex-wrap justify-center gap-6 perspective-1000">
+                {skills.map((skill) => (
+                    <TechTag key={skill.name} name={skill.name} color={skill.color} />
                 ))}
             </div>
         </div>
