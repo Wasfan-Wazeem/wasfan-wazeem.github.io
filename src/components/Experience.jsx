@@ -15,7 +15,7 @@ const experiences = [
         'Developed custom Argo Workflows and Docker images for automated Android builds.',
         'Integrated Azure Blob Storage for artifact hosting and verified secure signing key management using Kubernetes secrets.'
     ],
-    skills: ['React', 'TypeScript', 'Go', 'Ballerina', 'GraphQL', 'Kubernetes', 'Docker', 'Argo Workflows']
+    skills: ['React.js', 'TypeScript', 'Node.js', 'Go', 'Ballerina', 'Android', 'Kubernetes', 'Docker', 'Argo Workflows', 'GitOps', 'Azure Blob Storage', 'GraphQL']
   },
   {
     company: 'Legacy Health LLC, Sri Lanka',
@@ -29,7 +29,7 @@ const experiences = [
         'Skilled in multiple practice management systems (Cerner, Nextech, Modmed, etc.).',
         'Contributed to team management, onboarding, and training newcomers.'
     ],
-    skills: ['Revenue Cycle Management', 'Team Leadership', 'Operations', 'Training']
+    skills: ['Revenue Cycle Management', 'Team Management', 'Operations', 'Training', 'Strategic Thinking', 'Virtual Collaboration']
   }
 ];
 

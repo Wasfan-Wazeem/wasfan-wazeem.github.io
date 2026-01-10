@@ -103,27 +103,27 @@ const About = () => {
                                     >
                                         ▹
                                     </motion.span>
-                                    <span><strong>Full Stack Development</strong> – Building robust, scalable web applications using React, Node.js, and Java Spring.</span>
+                                    <span><strong>Full Stack Development</strong> – Building scalable web applications with React.js, Next.js, Node.js, Spring Boot, and CMS platforms (WordPress, Sanity).</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <motion.span 
                                         animate={{ opacity: [0.4, 1, 0.4] }}
-                                        transition={{ duration: 2, repeat: Infinity, delay: 0 }}
+                                        transition={{ duration: 2, repeat: Infinity, delay: 0.2 }}
                                         className="text-neon-green mt-1 drop-shadow-[0_0_5px_rgba(0,255,65,0.5)]"
                                     >
                                         ▹
                                     </motion.span>
-                                    <span><strong>Cloud & DevOps</strong> – Specialized in Docker, Kubernetes, and streamlining deployments through CI/CD pipelines.</span>
+                                    <span><strong>Mobile Development</strong> – Engineering cross-platform apps with React Native and native Android (Kotlin) for high-performance user experiences.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <motion.span 
                                         animate={{ opacity: [0.4, 1, 0.4] }}
-                                        transition={{ duration: 2, repeat: Infinity, delay: 0 }}
+                                        transition={{ duration: 2, repeat: Infinity, delay: 0.4 }}
                                         className="text-neon-green mt-1 drop-shadow-[0_0_5px_rgba(0,255,65,0.5)]"
                                     >
                                         ▹
                                     </motion.span>
-                                    <span><strong>Mobile Development</strong> – Engineering high-performance mobile applications with React Native and Native Android.</span>
+                                    <span><strong>Cloud & DevOps</strong> – Specialized in Docker, Kubernetes, Argo Workflows, and CI/CD pipelines for automated deployments and GitOps practices.</span>
                                 </li>
                             </ul>
                         </div>
