@@ -1,9 +1,52 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Download, ExternalLink, Code2, Cpu, Database, Smartphone, Globe, Layers, Terminal, Zap, CheckCircle2, ArrowRight } from 'lucide-react';
 import MagneticButton from './MagneticButton';
 
+// Custom typing animation hook
+const useTypingAnimation = (words, typingSpeed = 100, deletingSpeed = 50, pauseDuration = 2500) => {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [currentText, setCurrentText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentWord = words[currentWordIndex];
+    
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        // Typing
+        if (currentText.length < currentWord.length) {
+          setCurrentText(currentWord.slice(0, currentText.length + 1));
+        } else {
+          // Pause before deleting
+          setTimeout(() => setIsDeleting(true), pauseDuration);
+        }
+      } else {
+        // Deleting
+        if (currentText.length > 0) {
+          setCurrentText(currentText.slice(0, -1));
+        } else {
+          setIsDeleting(false);
+          setCurrentWordIndex((prev) => (prev + 1) % words.length);
+        }
+      }
+    }, isDeleting ? deletingSpeed : typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [currentText, isDeleting, currentWordIndex, words, typingSpeed, deletingSpeed, pauseDuration]);
+
+  return currentText;
+};
+
 const Hero = () => {
+  const roles = [
+    'Software Engineer',
+    'Full Stack Developer',
+    'Mobile Engineer'
+  ];
+  
+  const typedRole = useTypingAnimation(roles);
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center pt-10 md:pt-0">
       {/* Glow Effects */}
@@ -25,7 +68,10 @@ const Hero = () => {
           
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
             Hi, I'm <span className="text-neon-green">Wasfan Wazeem.</span><br />
-            Software <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-blue-500">Engineer</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-blue-500">
+              {typedRole}
+            </span>
+            <span className="animate-pulse text-neon-green">|</span>
           </h1>
           
           <p className="text-gray-400 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
