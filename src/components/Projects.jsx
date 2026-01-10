@@ -53,6 +53,18 @@ const projects = [
         live: '#'
     },
     {
+        title: 'Personal Portfolio Website',
+        description: 'A modern, interactive portfolio website showcasing projects, skills, and experience. Features custom animations, magnetic interactions, and a reactive particle background for an engaging user experience.',
+        challenge: 'Creating a portfolio that stands out in a crowded field while maintaining excellent performance and user experience. The challenge was to balance aesthetic appeal with functional design and fast load times.',
+        solution: 'Built a responsive single-page application using React 19 and Vite for optimal performance. Implemented Framer Motion for smooth, physics-based animations and created custom interactive components including a magnetic button effect and reactive particle background. Leveraged Tailwind CSS for a modern, consistent design system.',
+        results: 'Achieved a fully responsive, production-ready portfolio with optimized performance metrics. Successfully integrated advanced animation libraries and custom interactive components while maintaining clean, maintainable code architecture and cross-browser compatibility.',
+        features: ['Custom Magnetic Cursor', 'Reactive Particle Background', 'Smooth Page Transitions', 'Interactive Project Modals', 'Responsive Design', 'Optimized Performance', 'Attractive Animations'],
+        tags: ['React.js', 'Vite', 'Framer Motion', 'Tailwind CSS', 'Lucide Icons', 'Vercel'],
+        image: '/projects/personal_portfolio_mockup.png',
+        github: 'https://github.com/Wasfan-Wazeem/Wasfan-Wazeem.github.io',
+        live: 'https://wasfan-wazeem.vercel.app/'
+    },
+    {
         title: 'MyHR - HR Management System',
         description: 'A comprehensive Human Resource Management system featuring full CRUD operations for executive and user record management. Designed for administrative efficiency with a secure authentication layer.',
         challenge: 'Manual HR processes and fragmented data spreadsheets often lead to record inaccuracies and security vulnerabilities for employee information.',
