@@ -54,8 +54,9 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                                 alt={project.title} 
                                 className="w-full h-full object-cover"
                             />
-                            <div className="absolute bottom-8 left-8 right-8 z-20">
-                                <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">{project.title}</h2>
+                            {/* Title & Tags - Desktop Only (over image) */}
+                            <div className="hidden md:block absolute bottom-8 left-8 right-8 z-20">
+                                <h2 className="text-5xl font-bold text-white mb-2">{project.title}</h2>
                                 <div className="flex flex-wrap gap-2">
                                     {project.tags.slice(0, 4).map(tag => (
                                         <span key={tag} className="px-3 py-1 rounded-full bg-neon-green/10 border border-neon-green/20 text-neon-green text-xs font-mono">
@@ -67,7 +68,19 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                         </div>
 
                         {/* Details Content */}
-                        <div className="p-8 md:p-12 space-y-12">
+                        <div className="p-8 md:p-12 md:-mt-12 space-y-12">
+                            {/* Project Title & Tags - Mobile Only (below image) */}
+                            <div className="block md:hidden space-y-4">
+                                <h2 className="text-3xl font-bold text-white">{project.title}</h2>
+                                <div className="flex flex-wrap gap-2">
+                                    {project.tags.slice(0, 4).map(tag => (
+                                        <span key={tag} className="px-3 py-1 rounded-full bg-neon-green/10 border border-neon-green/20 text-neon-green text-xs font-mono">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
                             {/* Case Study Sections */}
                             <div className="grid md:grid-cols-3 gap-8">
                                 <div className="space-y-4">
